@@ -37,7 +37,8 @@
     }
   },
   "logo": {
-    "dark": "/logo/dark.png"
+    "dark": "/logo/dark.png",
+    "light": "/logo/dark.png"
   },
   "navbar": {
     "links": [
@@ -51,9 +52,13 @@
   "contextual": {
     "options": [
      "claude",
+     "chatgpt",
      "mcp",
      "cursor",
-     "cli"
+     "perplexity",
+     "vscode",
+     "copy",
+     "view"
    ]
   },
   "footer": {
