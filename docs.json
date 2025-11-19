@@ -4,8 +4,8 @@
   "name": "SourceWizard",
   "colors": {
     "primary": "#0000FF",
-    "light": "#000077",
-    "dark": "#000077"
+    "light": "#0000FF",
+    "dark": "#0000FF"
   },
   "appearance": {
     "default": "dark",
