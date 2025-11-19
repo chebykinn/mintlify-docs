@@ -118,11 +118,11 @@ Discover opportunities to reuse existing code from your codebase or external lib
 
 <AccordionGroup>
   <Accordion title="Do you store our code?">
-    No, we do not store your code. Files are processed locally and only the minimum necessary information is sent to the LLM for processing.
+    No, we do not store your code. Files are processed locally as much as possible and only the minimum necessary information is sent to the LLM for processing.
   </Accordion>
 
   <Accordion title="Do you read secrets from our codebase?">
-    No, we do not read secrets from your codebase. Processing happens locally and we only send the minimum necessary information to the LLM.
+    Definitely not, we do not read secrets from your codebase. Env files are processed locally as well, and hidden from LLM: [https://github.com/sourcewizard-ai/sourcewizard/blob/main/install-agent/new-agent.ts#L500](Here's how). We welcome any contributions to filter more data, the current check is very basic.
   </Accordion>
 
   <Accordion title="What is the current status of SourceWizard?">
