@@ -8,11 +8,52 @@ description: "Start integrating libraries in minutes"
 SourceWizard helps you quickly integrate libraries into your codebase using LLM subagent.
 Choose the method that works best for your workflow:
 
+## Demo
+
+Watch SourceWizard in action:
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/P8OK-kD-fTo"
+  title="SourceWizard Demo"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+## Setup Options
+
 <Tabs>
+  <Tab title="MCP Integration">
+    ## Using the MCP Server
+
+    If you want to pair SourceWizard with your coding agents, you can use our MCP server.
+
+    ### Step 1: Log in to the Dashboard
+
+    Visit the [SourceWizard Dashboard](https://sourcewizard.ai/dashboard) and log in with your account.
+
+    ### Step 2: Copy MCP Configuration
+
+    Once logged in, navigate to the MCP configuration section and copy your personalized MCP server configuration.
+
+    ### Step 3: Add to Your Coding Agent
+
+    Follow the instructions in the dashboard and add the copied configuration to your coding agent's MCP settings.
+
+    ### What can you do with MCP?
+
+    With the MCP server connected, you can:
+    - Search for packages directly in your chat tab
+    - Run automatic integrations for SDKs and Tools, see [packages](https://sourcewizard.ai/packages)
+
+  </Tab>
+
   <Tab title="CLI">
     ## Using the CLI
 
-    The fastest way to get started is with our CLI tool. Simply run:
+    If you prefer CLI we have a command mode as well. Simply run:
 
     ```bash
     npx ai-setup <library-name>
@@ -25,47 +66,9 @@ Choose the method that works best for your workflow:
     ```
 
     This will:
-    - Search for the best package for your needs
-    - Install the library with the correct package manager
-    - Provide AI-guided setup instructions
-    - Generate integration code examples
-
-    ### What happens next?
-
-    The CLI will walk you through:
-    1. Package selection and installation
-    2. Configuration setup
-    3. Code generation for common use cases
-    4. Best practices and tips
-
-  </Tab>
-
-  <Tab title="MCP Integration">
-    ## Using the MCP Server
-
-    For deeper integration with coding agents like Claude Code, use the SourceWizard MCP server.
-
-    ### Step 1: Log in to the Dashboard
-
-    Visit the [SourceWizard Dashboard](https://sourcewizard.ai/dashboard) and log in with your account.
-
-    ### Step 2: Copy MCP Configuration
-
-    Once logged in, navigate to the MCP configuration section and copy your personalized MCP server configuration.
-
-    ### Step 3: Add to Your Coding Agent
-
-    Add the copied configuration to your coding agent's MCP settings.
-    For Claude Code, this typically goes in your `.claude.json` or MCP configuration file.
-
-    ### What can you do with MCP?
-
-    With the MCP server connected, you can:
-    - Search for packages directly in your AI conversations
-    - Get installation and setup guidance
-    - Receive context-aware code suggestions
-    - Discover reusable code in your codebase
-    - Get type checking and linting feedback
+    - Detect your repository configuration and package manager
+    - Follow the setup prompt and integrate the library
+    - Generate an example page or endpoint using the library
 
   </Tab>
 </Tabs>
@@ -74,32 +77,35 @@ Choose the method that works best for your workflow:
 
 SourceWizard helps you throughout your entire development workflow:
 
-### 1. Package Discovery
+### 1. Automatic Integration
 
-Search for packages and code snippets using AI-powered analysis. SourceWizard helps you:
+Install and configure packages with LLM-based setup:
+- Automatic detection of your package manager (npm, yarn, pnpm, bun, uv, ...)
+- Integration with your existing codebase in all the necessary places (middleware, api, pages, providers)
+- Configuration files generation
+- Environment setup guidance
+
+**Example:** "Install and configure Clerk for authentication, Resend for sending emails"
+
+Essentially it does everything that is needed to onboard on the library.
+
+
+### 2. Package Discovery
+
+Search for packages and code snippets. SourceWizard helps you:
 - Find the right library for your specific use case
 - Compare similar packages and their features
 - Discover hidden gems and emerging libraries
-- Get recommendations based on your project context
+- Get recommendations based on your project context, language and framework
 
 **Example:** "Find a library for handling dates in TypeScript"
 
-### 2. Smart Installation
-
-Install and configure packages with AI-guided setup:
-- Automatic detection of your package manager (npm, yarn, pnpm, bun)
-- Configuration file generation
-- Environment setup guidance
-- Integration with your existing codebase
-
-**Example:** "Install and configure Stripe for payment processing"
-
-### 3. Code Reuse
+### 3. Code Reuse (Coming Soon)
 
 Discover opportunities to reuse existing code from your codebase or external libraries:
 - Identify duplicate functionality in your project
 - Find existing implementations before writing new code
 - Suggest refactoring opportunities
-- Recommend battle-tested external libraries over custom implementations
+- Recommend production-tested external libraries over custom implementations
 
 **Example:** "Should I write custom authentication or use an existing library?"

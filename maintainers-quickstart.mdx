@@ -3,13 +3,17 @@ title: "Quickstart For Maintainers"
 description: "Start building integration scripts for your library"
 ---
 
+<Note>
+  SourceWizard is currently in early development and may have rough edges. We're actively working on improvements and appreciate your feedback as we refine the platform.
+</Note>
+
 ## Get started
 
 As a library maintainer, SourceWizard helps you create AI integration scripts that make it easier for developers to adopt your library. Follow these steps to get your library integrated.
 
 ## Step 1: Log in to the Dashboard
 
-Visit the [SourceWizard Dashboard](https://sourcewizard.ai/dashboard) and log in with your account.
+Visit the [SourceWizard Dashboard](https://sourcewizard.ai/maintainer-dashboard) and log in with your account.
 
 ## Step 2: Add Your Package
 
@@ -24,7 +28,7 @@ You can update the setup prompt from the package page, and add more framework-sp
 <img src="/images/edit-package.png" alt="Edit package settings" />
 
 - **General Setup Prompt**: Instructions that apply to all frameworks
-- **Framework-Specific Prompts**: Customized guidance for Next.js, React, Vue, etc.
+- **Framework-Specific Prompts**: Customized guidance for Next.js, React, FastAPI, etc.
 
 <img src="/images/edit-package-prompt-view.png" alt="Edit package prompt view" />
 
@@ -72,8 +76,6 @@ On the main dashboard page, you'll be able to see statistics for your package in
 
 - Total installation count
 - Success rate
-- Common failure points
-- User feedback and ratings
 
 ### Agent Runs
 
@@ -90,24 +92,18 @@ Click on any run to see:
 
 <img src="/images/agent-chat-log.png" alt="Agent chat log details" />
 
-- Step-by-step execution flow
-- Error messages and debugging information
+- Step-by-step execution log
+- Debugging information
 - Generated code and configuration
-- Suggestions for prompt improvements
 
 <img src="/images/agent-log-prompt.png" alt="Agent log with prompt details" />
 
-<Tip>
-  Regularly review failed agent runs to improve your setup prompts and make your library easier to integrate.
-</Tip>
-
 ## Best Practices
 
-1. **Keep prompts updated**: When you release new versions, update your setup prompts accordingly
+1. **Keep prompts updated**: When you release new versions, update your setup prompts accordingly, especially for breaking changes.
 2. **Test thoroughly**: Verify integrations work across different frameworks and environments
-3. **Monitor feedback**: Use the dashboard to identify and fix common integration issues
-4. **Iterate quickly**: Update prompts based on real-world usage patterns
-5. **Provide examples**: Include code examples and common use cases in your prompts
+3. **Provide examples**: Include code examples and common use cases in your prompts
+4. **Monitor feedback**: Use the dashboard to identify and fix common integration issues
 
 ## Next Steps
 
