@@ -3,6 +3,10 @@ title: "Quickstart"
 description: "Start integrating libraries in minutes"
 ---
 
+<Note>
+  SourceWizard is currently in early development and may have rough edges. We're actively working on improvements and appreciate your feedback as we refine the platform.
+</Note>
+
 ## Get started
 
 SourceWizard helps you quickly integrate libraries into your codebase using LLM subagent.
@@ -109,3 +113,27 @@ Discover opportunities to reuse existing code from your codebase or external lib
 - Recommend production-tested external libraries over custom implementations
 
 **Example:** "Should I write custom authentication or use an existing library?"
+
+## FAQ
+
+<AccordionGroup>
+  <Accordion title="Do you store our code?">
+    No, we do not store your code. Files are processed locally and only the minimum necessary information is sent to the LLM for processing.
+  </Accordion>
+
+  <Accordion title="Do you read secrets from our codebase?">
+    No, we do not read secrets from your codebase. Processing happens locally and we only send the minimum necessary information to the LLM.
+  </Accordion>
+
+  <Accordion title="What is the current status of SourceWizard?">
+    SourceWizard is currently in alpha. We're actively developing and improving the product based on user feedback.
+  </Accordion>
+
+  <Accordion title="What does SourceWizard actually do?">
+    SourceWizard runs a coding agent that understands your repository structure and executes custom integration instructions. It analyzes your project configuration, detects your tech stack, and runs the necessary steps to integrate supported libraries into your codebase.
+  </Accordion>
+
+  <Accordion title="Is SourceWizard open source?">
+    The client that runs on your repository is open source and will always be. This ensures transparency and allows you to verify exactly what's happening with your code. The server part is not open source though.
+  </Accordion>
+</AccordionGroup>
