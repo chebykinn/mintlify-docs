@@ -55,6 +55,12 @@
      "view"
    ]
   },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/quickstart"
+    }
+  ],
   "footer": {
     "socials": {
       "x": "https://x.com/sourcewizardai",
