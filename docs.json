@@ -4,6 +4,7 @@
   "name": "SourceWizard",
   "colors": {
     "primary": "#0000FF",
+    "light": "#000077",
     "dark": "#000077"
   },
   "appearance": {
@@ -51,14 +52,10 @@
   },
   "contextual": {
     "options": [
-     "claude",
-     "chatgpt",
-     "mcp",
-     "cursor",
-     "perplexity",
-     "vscode",
      "copy",
-     "view"
+     "view",
+     "cursor",
+     "claude"
    ]
   },
   "footer": {
