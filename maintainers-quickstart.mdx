@@ -1,6 +1,120 @@
 ---
 title: "Quickstart For Maintainers"
-description: "Start building integration scripts"
+description: "Start building integration scripts for your library"
 ---
 
 ## Get started
+
+As a library maintainer, SourceWizard helps you create AI integration scripts that make it easier for developers to adopt your library. Follow these steps to get your library integrated.
+
+## Step 1: Log in to the Dashboard
+
+Visit the [SourceWizard Dashboard](https://sourcewizard.ai/dashboard) and log in with your account.
+
+## Step 2: Add Your Package
+
+Navigate to the **Packages** tab and add your package to SourceWizard.
+
+<img src="/images/packages.png" alt="Packages dashboard" />
+
+### Configure Setup Prompts
+
+You can update the setup prompt from the package page, and add more framework-specific prompts:
+
+<img src="/images/edit-package.png" alt="Edit package settings" />
+
+- **General Setup Prompt**: Instructions that apply to all frameworks
+- **Framework-Specific Prompts**: Customized guidance for Next.js, React, Vue, etc.
+
+<img src="/images/edit-package-prompt-view.png" alt="Edit package prompt view" />
+
+After you press **Save**, the prompt will be updated in production immediately.
+
+<Tip>
+  Write clear, step-by-step instructions in your setup prompts. Include common configuration patterns and best practices for your library.
+</Tip>
+
+## Step 3: Initial Testing
+
+Before publishing your integration, test it thoroughly:
+
+### Create a Test Project
+
+```bash
+bunx create-next-app sample-app
+cd sample-app
+```
+
+### Test the CLI Installation
+
+```bash
+bunx sourcewizard install <your-package-name>
+```
+
+### Verify the Integration
+
+1. Replace placeholder environment variables with real ones
+2. Test that your library is working correctly
+3. Verify all generated code and configuration files
+4. Check that the setup instructions are clear and complete
+
+<Warning>
+  Make sure to test with different package managers (npm, yarn, pnpm, bun) and frameworks to ensure broad compatibility.
+</Warning>
+
+## Monitor Performance
+
+### Evals Dashboard
+
+On the main dashboard page, you'll be able to see statistics for your package installations:
+
+<img src="/images/stats.png" alt="Package installation statistics" />
+
+- Total installation count
+- Success rate
+- Common failure points
+- User feedback and ratings
+
+### Agent Runs
+
+Monitor agent execution in the **Agent Runs** tab:
+
+<img src="/images/agent-runs.png" alt="Agent runs dashboard" />
+
+- View detailed logs of each installation attempt
+- Identify where the agent encountered issues
+- Analyze what should be updated in your prompt or SDK
+- Track improvements over time
+
+Click on any run to see:
+
+<img src="/images/agent-chat-log.png" alt="Agent chat log details" />
+
+- Step-by-step execution flow
+- Error messages and debugging information
+- Generated code and configuration
+- Suggestions for prompt improvements
+
+<img src="/images/agent-log-prompt.png" alt="Agent log with prompt details" />
+
+<Tip>
+  Regularly review failed agent runs to improve your setup prompts and make your library easier to integrate.
+</Tip>
+
+## Best Practices
+
+1. **Keep prompts updated**: When you release new versions, update your setup prompts accordingly
+2. **Test thoroughly**: Verify integrations work across different frameworks and environments
+3. **Monitor feedback**: Use the dashboard to identify and fix common integration issues
+4. **Iterate quickly**: Update prompts based on real-world usage patterns
+5. **Provide examples**: Include code examples and common use cases in your prompts
+
+## Next Steps
+
+Once your package is configured and tested:
+
+1. Share the installation command with your community
+2. Add it to your library's documentation
+3. Monitor the dashboard for feedback and improvements
+4. Iterate on your setup prompts based on user success rates
+
